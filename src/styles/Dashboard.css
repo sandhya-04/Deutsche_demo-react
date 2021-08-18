@@ -1,0 +1,118 @@
+.box-1{
+    background-color: #3B76EF;
+}
+.box-2{
+    background-color: #63C7FF;
+}
+.box-3{
+    background-color: #A66DD4;
+}
+.box-4{
+    background-color: #6DD4B1;
+}
+.box{
+    opacity: 0.7;
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .box{
+        width: 46% !important;
+    }
+ }
+.box:hover{
+    opacity: 1;
+}
+
+.clickable{
+    cursor: pointer !important;
+}
+.non-clickable{
+    cursor: unset !important;
+}
+.non-clickable:focus{
+    box-shadow: none !important;
+}
+
+.custom-dash-card{
+    border: 0!important;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170,.25)!important;
+    background-color: white;
+    border-radius: 10px !important;
+}
+
+.custom-responsive-table{
+    padding-left: 0;
+}
+
+.custom-responsive-table>li{
+    border-radius: 3px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+.custom-responsive-table>li:hover{
+    background: rgba(0, 0, 0, 0.075);
+}
+.custom-table-header {
+    background-color: #212529;
+    font-size: 16px;
+    color: rgba(255,255,255,.60);
+    font-weight: 600;
+    padding: 20px 30px !important;
+    text-transform: uppercase;
+}
+.custom-table-header:hover {
+    color: rgba(255,255,255,.85);
+    background-color: #212529 !important;
+}
+.custom-table-row {
+    background-color: #ffffff;
+
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+.custom-table-col{
+    padding-right: 5px;
+}
+
+.custom-table-col-1 {flex-basis: 5%;}
+.custom-table-col-2 {flex-basis: 20%;}
+.custom-table-col-3 {flex-basis: 18%;}
+.custom-table-col-4 {flex-basis: 12%;}
+.custom-table-col-5 {flex-basis: 45%;}
+
+@media all and (min-width: 767px) {
+    .custom-table-col-1 {width: 5%;}
+    .custom-table-col-2 {width: 20%;}
+    .custom-table-col-3 {width: 18%;}
+    .custom-table-col-4 {width: 12%;}
+    .custom-table-col-5 {width: 45%;}
+}
+@media all and (max-width: 767px) {
+    
+    .custom-table-header {
+      display: none !important;
+    }
+    .custom-responsive-table>li {
+      display: block;
+    }
+    .custom-table-col {
+      display: flex;
+      padding: 10px 0;
+      flex-basis: 100%;
+    }
+    .custom-table-col::before{
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+    .custom-table-col-5{
+        display: none;
+    }
+  }

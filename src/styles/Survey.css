@@ -1,0 +1,180 @@
+.moji {
+  font-size: 5em;
+  text-align: center;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider>input{
+  min-width: 75%;
+}
+span.rating-desc {
+  font-weight: bold;
+  color: #5fcf80;
+}
+span.rating-desc:first-child {
+  color: tomato;
+}
+
+.custom-input{
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid black !important;
+}
+.custom-input:focus{
+  outline: 0 !important;
+  border: none !important;
+  border-bottom: 2px solid blue !important;
+  box-shadow: none !important;
+}
+
+.form-label{
+  font-size: 18px;
+  color: gray;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+.ReactTags__tags {
+  position: relative;
+}
+
+.ReactTags__clearAll {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  background: #f88d8d;
+  color: #fff;
+  border: none;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput{
+  border: none !important;
+  border-radius: 0 !important;
+  display: inline-block;
+  width: 100%;
+}
+.ReactTags__tagInput input.ReactTags__tagInputField{
+  border: none !important;
+  border-radius: 0 !important;
+  display: inline-block;
+  border-bottom: 2px solid black !important;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.ReactTags__tagInput input.ReactTags__tagInputField:focus{
+  outline: 0 !important;
+  border: none !important;
+  box-shadow: none !important; 
+  border-bottom: 2px solid blue !important;
+}
+
+.ReactTags__editInput {
+  border-radius: 1px;
+}
+
+.ReactTags__editTagInput {
+  display: inline-flex;
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tag {
+  border: 1px solid #ddd;
+  background: #63bcfd;
+  /* background: linear-gradient(to left,#74ebd5,#9face6); */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+.ReactTags__selected a.ReactTags__remove {
+  color: #aaa;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styles for suggestions */
+div.ReactTags__suggestions {
+    position: absolute;
+}
+div.ReactTags__suggestions ul {
+    list-style-type: none;
+    list-style: none !important;
+    box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+    background: white;
+    width: 300px;
+    margin:0;
+    padding: 0;
+}
+div.ReactTags__suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+}
+div.ReactTags__suggestions li mark {
+    background: none;
+    font-weight: 600;
+    color: tomato;
+    margin: 0;
+    padding: 0;
+}
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+    background: #d5dadd;
+    cursor: pointer;
+}
+
+.ReactTags__remove {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+.survey-bg{
+  background-image: url('../assets/signup-bg.jpg');
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.survey-card{
+  box-shadow: 0 7px 20px -15px rgba(150,170,180,0.7);
+    /* box-shadow: 0 0 1.125rem 0 rgb(33 37 41 / 5%); */
+    border-radius: 0.50rem !important;
+    border: 0 solid transparent !important;
+}
+
+.custom-slider {
+  -webkit-appearance: none;
+  height: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to left, rgb(116, 235, 213), rgb(159, 172, 230));
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.custom-slider:hover{
+  opacity:1
+}
+.custom-slider::-webkit-slider-thumb {
+  background: darkblue !important;
+  cursor: pointer;
+}
+.custom-slider::-moz-range-thumb {
+  background: darkblue;
+  cursor: pointer;
+}
